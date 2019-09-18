@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+}
+
+.formContainer{
+    background-color: rgb(182, 186, 187);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px 40px;
+
+}
+
+.label{
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0px 10px 0px;
+}
+
+.input{
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.button{
+    background-color: rgb(50, 160, 160);
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px;
+}
