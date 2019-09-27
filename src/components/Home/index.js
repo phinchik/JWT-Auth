@@ -17,7 +17,7 @@ class Home extends Component {
     }
 
     getPost = () => {
-        axios.get('http://localhost:8080/api/posts', {
+        axios.get('http://localhost:8080/api/posts', { data: this.state.token }, {
             headers: {
                 authorization: `Bearer ${this.state.token}`
             }

@@ -1,9 +1,10 @@
 .container {
     display: flex;
+    flex-direction: column;
 }
 
 .formContainer{
-    background-color: rgb(182, 186, 187);
+     background-image: linear-gradient(-90deg, rgb(203, 211, 212), rgb(96, 211, 201));
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -31,4 +32,10 @@
     color: white;
     font-size: 20px;
     margin: 20px 0px;
+}
+
+.errorMsg{
+    color: red;
+    font-size: 20px;
+    text-align: center;
 }

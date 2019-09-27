@@ -5,6 +5,10 @@ import Header from './components/Header'
 import Login from './components/Login'
 import Home from './components/Home'
 
+export const getToken = () => {
+  return updatedToken
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -27,12 +31,16 @@ class App extends Component {
     window.location.reload()
   }
 
+  onHandleToken = (token) => {
+    this.setState({ token })
+  }
+
 
 
   render() {
     return <div>
       <Header token={this.state.token} logout={this.logout} />
-      {this.state.token ? <Home token={this.state.token} /> : <Login />
+      {this.state.token ? <Home token={this.state.token} /> : <Login onHandleToken={this.onHandleToken} token={this.state.token} />
       }
     </div>
   }
